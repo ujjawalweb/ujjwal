@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Document</title>
+
+    <style>
+	input:focus::-webkit-input-placeholder { color:transparent!important; }
+input:focus:-moz-placeholder { color:transparent!important; } /* FF 4-18 */
+input:focus::-moz-placeholder { color:transparent!important; } /* FF 19+ */
+input:focus:-ms-input-placeholder { color:transparent!important; } /* IE 10+ */
+.cursor-center{text-align:center;}
+
+::placeholder{color:#595454 !important;font-size: 14px !important;font-weight: 500!important;position:relative;left:0px;}
+        body{overflow: hidden;font-family: 'Open Sans', sans-serif !important;}
+	.mand{    position: relative;
+    top: 12px;
+    left: -186px;
+}
+
+.lnk{    position: relative!important;
+    top: -101px!important;
+}
+
+.edit{    margin-left: 17px;
+    font-weight: bold;
+    color:#e91e63;
+
+}
+input[type=checkbox], input[type=radio] {
+    margin: 4px 0 0;
+    margin-top: 1px\9;
+    line-height: normal;
+    width: 30px;
+    height: 17px;}
+
+.banks{position: relative;
+    top: -6px;left: 3px;
+}
+
+.para3{   font-size: 9px;
+    font-weight: 500;
+    color: #535151;
+    position: relative;
+    top: -43px;
+    left: 42px;}
+
+
+        .four{ margin-top: -69px;}
+        .para2{       font-size: 9px;
+    font-weight: 500;
+    color: #535151;
+    position: relative;
+    top: -43px;
+    left: 46px;
+}
+        .tit2{    font-weight: 600!important;
+    color: #373636!important;
+    margin-left: -22px;
+    position: relative;
+    top: -20px;
+}
+
+        .two{ margin-top: -108px;}
+.up{    position: relative;
+    top: -11px;}
+        .three{ margin-top: -91px;}
+        .pays{    position: relative;
+    top: 13px;
+}
+
+.amaz{position: relative;
+    top: 15px;
+}
+
+.para{    font-size: 9px;
+    font-weight: 500;
+    color: #535151;
+    position: relative;
+    top: -59px;
+    left: 46px;
+}
+
+.num{    position: relative;
+    top: -23px;
+    left: 43px;
+    font-size: 9px;
+    color: #535151;
+    letter-spacing: 1px;
+    font-weight: 600;
+
+}
+
+.tit{font-weight: 600!important;color:#373636!important;     margin-left: -22px;
+}
+        .links{margin-left:63px;
+    position: relative;
+    top: -3px;
+    font-weight: 600;
+    color: #4CC4FF;
+    border: 1px solid grey;
+    padding: 4px;
+    font-size: 11px;
+}
+
+.rws{line-height: 40px;
+  
+    color: #565454;
+   
+    font-size: 12px;
+    padding: 0px 6px;
+    position: relative;
+    top: -20px;
+
+}
+
+.link {
+  margin-left: 219px;
+    position: relative;
+    top: -105px;
+    font-weight: 600;
+    color:#e91e63;
+    /* border: 1px solid grey; */
+    padding: 4px;
+    font-size: 10px;
+}
+
+
+.links
+
+
+
+        .pay{position: relative;
+    left: -173px;font-size: 12px;
+}
+
+
+
+.rad{     margin-left: 255px !important;
+    position: relative;
+    top: -131px;}
+
+.red{     margin-left: 254px!important;
+    position: relative;
+    top: -131px;}
+
+.top{position: relative;
+    top: -11px;}
+.acc{
+    line-height: 41px;
+    list-style-type: none;
+}
+        .mts{position: relative;top:-30px;left:10px;}
+        h1 {
+  
+  text-align:center;
+  color: #595454;
+    font-size: 12px;
+  font-weight:600;
+  
+  padding-top:10px;
+  margin-top: 3px;
+}
+
+.rup{color:#373636;font-size:18px;font-weight: bold;}
+.left-nav:hover{
+  cursor:pointer;
+  color:#298bbb;
+}
+.left-nav:hover polyline{
+  stroke:#298bbb;
+}
+.nav-text:hover {
+  color:#298bbb;
+  cursor:pointer;
+}
+.back-arrow{
+  display:inline;
+  float:left;
+  padding-left:20px;
+  padding-top:17px;
+}
+.back-arrow:hover polyline{
+}
+.nav-text {    margin-top: 20px;
+  display:inline;
+  float:left;
+  padding-top:19px;
+  padding-left:12px;
+  width:200px;
+
+  text-transform:uppercase;
+  font-weight:700;
+  text-align:left;
+  color:#4CC4FF;
+  font-size:12px;
+  letter-spacing:1px;
+}
+.close-x {
+  display:inline;
+  padding-right:20px;
+  padding-top:17px;
+  float:right;
+}
+.close-x:hover{
+  cursor:pointer;
+}
+.close-x:hover g{
+  stroke:red;
+}
+.widget-container {
+  position: absolute;
+  top:35%;
+  left:50%;
+  margin-top:-215px;
+  margin-left:-175px;
+  background:#fff;
+  width: 350px;
+  height:589px;  box-shadow: 0px 0px 40px #a3bbc3;
+
+}
+.inputs{
+  margin: 10px 20px 30px 20px;
+  padding:3px 20px;
+  display:inline-block;
+  background:#fbfbfb
+    ;
+  border-radius: 4px;
+  -moz-box-shadow:    inset 0px 1px 5px #dadada;
+  -webkit-box-shadow: inset 0px 1px 5px #dadada;
+  box-shadow:         inset 0px 1px 5px #dadada;
+}
+.top-nav{
+  background:#fff;
+  height:50px;
+  width:100%;
+  display:inline-block;
+  border-bottom:1px solid #f1f1f1;
+}
+
+.put {
+  background: #fbfbfb;
+    border: none;
+    outline: none;
+    height: 45px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color:#535151;
+    width: 267px;
+    position: relative;
+    float: left;
+    border-bottom: 1px solid #f1f1f1;
+
+}
+.card-icon{
+  display:relative;
+  float:left;
+  width:24px;
+  padding-top:20px;
+  margin-right:20px;
+}
+.left-input{
+  width:150px;
+  display:inline-block;
+  float:left;
+}
+.right-input{
+  width:100px;
+  display:inline-block;
+  float:left;
+}
+.right-input input{
+  width:50px;
+  display:inline-block;
+  float:left;
+}
+.month{
+  width:35px;
+  display:inline-block;
+  float:left;
+}
+.year{
+  width:50px;
+  display:inline-block;
+  float:left;
+}
+.slash{
+  display:inline-block;
+  float:left;
+  padding-top:22px;
+  padding-right:10px;
+}
+.last {
+  border-bottom:none;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  letter-spacing:2px;
+  color:#d1d1d1; 
+}
+::-moz-placeholder { /* Firefox 19+ */
+  letter-spacing:2px;
+  color:#d1d1d1;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  letter-spacing:2px;
+  color:#d1d1d1;
+}
+:-moz-placeholder { /* Firefox 18- */
+  letter-spacing:2px;
+  color:#d1d1d1;
+}
+
+.btn_style {
+    background: #4CC4FF;
+    color: #fff;
+    border: none;
+    text-align: center;
+    border-bottom: none;
+    height: 52px;
+    border-radius:5px;
+    font-size: 14px;
+    /* padding: 17px; */
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+    width: 322px;
+    padding: 9px;
+    margin-top: 4px;
+    margin-left: 12px;
+    position: relative;
+    top: -95px;
+  }
+
+
+.btn_style:hover{
+  background:#298bbb;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  cursor:pointer;
+}
+
+@media only screen and (max-width:768px) {
+.pays {
+    position: relative;
+    top: 16px;
+    left: -178px;
+}
+.rws {
+    line-height: 40px;
+    color: #565454;
+    font-size: 12px;
+    padding: 0px 6px;
+    position: relative;
+    top: 20px;
+}
+
+.tak{    margin-left: -203px!important;
+    position: relative !important;
+    top: -3px !important;
+}
+.btn_style {
+    background: #4CC4FF;
+    color: #fff;
+    border: none;
+    text-align: center;
+    border-bottom: none;
+    height: 52px;
+    border-radius: 5px;
+    font-size: 14px;
+    /* padding: 17px; */
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+    width: 322px;
+    padding: 9px;
+    margin-top: 4px;
+    margin-left: 12px;
+    position: relative;
+    top: -59px;
+}
+
+}
+
+
+
+@media only screen and (max-width:824px)  and (orientation:landscape) {
+body,html{overflow:hidden!important;max-width: 100%!important;
+  }
+
+.x-scroll-disabled {
+	overflow-x: hidden;
+}
+.background{overflow:hidden;}
+.widget-container {
+    position: relative;
+    top: 50%;
+    /* left: 50%; */
+    left: 50%;
+    transform: translate(-27%,33%);
+    margin-top: -189px;
+    /* margin-left: -318px; */
+    background: #fff;
+    width: 795px;
+    height: 585px;
+    box-shadow: 0px 0px 40px #a3bbc3;}
+.four {
+    margin-top: -77px;
+}
+.back-arrow {
+    display: inline;
+    float: left;
+    padding-left: 20px;
+    padding-top: 17px;
+    margin-left: 28px;
+	position: relative;
+    top: 3px;
+}
+
+
+
+.rws {
+    line-height: 40px;
+    color: #565454;
+    font-size: 12px;
+    padding: 0px 6px;
+    position: relative;
+    top: -61px;
+}
+
+h1 {
+    
+    text-align: center;
+    color: #595454;
+    font-size: 15px;
+    font-weight: 600;
+    
+    padding-top: 10px;
+    margin-top: 3px;
+   margin-left: 480px;
+}
+.put{width:144px;}
+
+.inputs {
+    margin: 10px 20px 30px 20px;
+    padding: 3px 20px;
+   position: relative;
+    left: 335px;    z-index: 9999;
+   
+}
+.nav-text {
+    margin-top: -11px;
+    display: inline;
+    float: left;    white-space: nowrap;
+    font-size: 15px;position: relative;
+    top: 2px;
+}
+	
+	.rws {
+    line-height: 40px;
+    color: #565454;
+    font-size: 12px;
+    padding: 0px 6px;
+    position: relative;
+    top: -93px;
+}
+    .mts{position: relative;
+    top: -35px;
+    left: 39px;
+}
+.min{white-space: nowrap;
+    position: relative!important;
+    top: -9px!important;
+    left: 186px !important;
+    font-weight: 600;
+    color: #8c8989;
+    font-size: 11px;
+}
+.btn_style{    width: 186px;
+    padding: 9px;
+    margin-top: 4px;
+    margin-left:555px;
+    position: relative;
+    top: -343px;
+}
+.rup {
+    color: #373636;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+}
+    </style>
+</head>
+<body>
+
+    <div class="background">
+        <div class="widget-container">
+           <div class="top-nav" style="background:#ebebed;">
+             <div class="left-nav">
+               <div class="back-arrow">
+                 <svg width="10px" height="17px" viewBox="0 0 10 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                 <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+                   <polyline id="Path-2" stroke="#2EC4FE" stroke-width="2" points="8.99665918 16 1.48001099 8.48335181 8.98002946 0.983333333"></polyline>
+                 </g>
+                 </svg>
+               </div>
+               <div class="nav-text" style="color:#000;margin-top: -2px;">
+                 Withdraw
+               </div>
+             </div>
+         <div class="close-x">
+           <svg width="15px" height="15px" viewBox="0 0 15 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+            <g id="Group" transform="translate(1.000000, 1.000000)" stroke="#777" stroke-width="2">
+                <path d="M0,12.7279221 L12.7279221,0" id="Path"></path>
+                <path d="M0,12.7279221 L12.7279221,0" id="Path" transform="translate(6.363961, 6.363961) scale(1, -1) translate(-6.363961, -6.363961) "></path>
+            </g>
+        </g>
+    </svg>
+         </div>
+       </div>
+       <h1>  Available  Balance :<span class="rup"> Rs 1.44</span></h1>     
+       <form action="#">
+         <div class="inputs">
+        
+           <input type="text"  class="put cursor-center" name="name" placeholder="Enter amount">
+       
+           
+
+           
+         </div>
+
+
+        
+
+
+          <span class="min" style="white-space: nowrap;
+          position: relative;
+          top: -30px;
+          left: -61px;
+          font-weight: 600;
+          color:#8c8989;
+          font-size: 11px;
+      ">Min 0 - Max 0</span>
+      
+      
+
+         <div class="nav-text mts">
+            Withdrawal methods
+          </div>
+
+
+          <div class="container">
+              <div class="row rws">
+              <div class="col-md-12"> <img src="images/py.png" width="30" class="pays" > &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp;<span class="tit tak">Paytm </span> <p class="num">+919694039777</p><p class="para">Instant Payout and paytm KYC is mandatory <span class="mand">for withdrawing</span></p> <input type="radio" class="rad"></div> 
+              <div class="col-md-12 two"> <img src="images/a.png" width="30"class="amaz" > &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp;<span class="tit">Amazon Pay </span> <p class="num">+919694039777<span class="edit">Edit</span></p> <p class="para">Instant Payout </p> <input type="radio" class="red"></div> 
+              <div class="col-md-12 three"> <img src="images/u.png" width="30" class="up" > &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp;<span class="tit2">UPI </span>  <p class="para2">Settlement may take up 3 working days </p> <span class="link">Linked Account</span> </div> 
+              <div class="col-md-12 four"> <img src="images/b.png" width="20" class="banks"> &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp;<span class="tit2">Bank Account</span>   <p class="para3">Settlement may take up 3 working days </p> <span class="link lnk">Linked Account</span>  </div> 
+              </div>
+          </div>
+         
+         <input class="btn_style" type="submit" value="Withdraw"> 
+        </form>
+      </div>
+    </div>
+
+
+    <script>
+        function validate(evt) {
+  var theEvent = evt || window.event;
+  var key = theEvent.keyCode || theEvent.which;
+  key = String.fromCharCode( key );
+  var regex = /[0-9]|\./;
+  if( !regex.test(key) ) {
+    theEvent.returnValue = false;
+    if(theEvent.preventDefault) theEvent.preventDefault();
+  }
+}
+    </script>
+    
+</body>
+</html>
